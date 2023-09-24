@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+#booking-container {
+  width: 75%; /* 3/4 of the viewport width */
+  height: 75%; /* 3/4 of the viewport height */
+  background-color: #ffffff; /* White color for the poster */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow to give it depth */
+  padding: 20px;
+  overflow: auto; /* Scroll if content exceeds */
+  border-radius: 15px; /* Rounded corners for aesthetic */
+}
+
+/* Some spacing for elements */
+#booking-container > * {
+  margin-bottom: 15px;
+}
+
+/* Button styling */
+#submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown styling */
+.Select-control {
+  border-radius: 5px;
+  border-color: #ced4da;
+}
