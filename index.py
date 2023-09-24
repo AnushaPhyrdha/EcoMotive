@@ -18,7 +18,7 @@ app.layout = html.Div([
 @app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
 def display_page(pathname):
-    if pathname == '/booking':
+    if pathname == '/book-ev-vehicles':
         return booking_layout.booking_page
     # ... other routes
     else:

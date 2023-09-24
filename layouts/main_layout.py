@@ -108,7 +108,7 @@ else:
 potential_savings = user_data["fuel_emissions"] - user_data["ev_emissions"]
 
 # Convert savings to points
-user_data["points"] = potential_savings * POINTS_PER_UNIT_SAVED
+user_data["points"] = round(potential_savings/100 * POINTS_PER_UNIT_SAVED, 2)
 
 
 layout = dbc.Container([

@@ -29,8 +29,11 @@ booking_page = html.Div([
         placeholder='Select destination city...'
     ),
     html.Div(id='output-fare'),
-    html.Button("Book Now", id='submit-btn'),
-    html.Div(id='booking-confirmation')
+    html.Div(id='total-message', style={'textAlign': 'right'}),
+    html.Div(id='coupon-message', style={'textAlign': 'right'}),
+    html.Div(id='payment-message', style={'textAlign': 'right'}),
+    html.Button("Book Now", id='submit-btn', style={'textAlign': 'right'}),
+    html.Div(id='booking-confirmation', style={'textAlign': 'right'})
 ], id='booking-container')
 
 
